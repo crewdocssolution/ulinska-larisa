@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ФОП Улінська Лариса Олександрівна — консалтинг для моряків</title>
+<meta name="description" content="Професійна інформаційна підтримка, підготовка профілів та супровід працевлаштування моряків. ФОП Улінська Л.О.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        abyss: {
+          950: '#060b14',
+          900: '#0b1424',
+          800: '#122036',
+          700: '#1a2f4d'
+        },
+        signal: {
+          400: '#2ee6c5',
+          500: '#14c9a8',
+          600: '#0fa88c'
+        },
+        mist: {
+          100: '#e8eef7',
+          200: '#c5d0e0',
+          400: '#8a9bb5'
+        }
+      },
+      fontFamily: {
+        sans: ['Manrope', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace']
+      },
+      boxShadow: {
+        'glow': '0 0 40px -8px rgba(46, 230, 197, 0.35)',
+        'card': '0 25px 50px -12px rgba(0, 0, 0, 0.55)'
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: Manrope, system-ui, sans-serif; }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(46, 230, 197, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(46, 230, 197, 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .check-card input:checked + .box {
+    background: #14c9a8;
+    border-color: #14c9a8;
+    color: #060b14;
+  }
+  .check-card input:checked ~ .label-text { color: #e8eef7; }
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -2px;
+    width: 0; height: 2px;
+    background: #2ee6c5;
+    transition: width 0.25s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+</style>
+</head>
+<body class="bg-abyss-950 text-mist-100 antialiased">
+
+<!-- Top bar -->
+<div class="border-b border-white/5 bg-abyss-900/80 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-4 py-2.5 flex flex-wrap items-center justify-between gap-2 text-xs text-mist-400">
+    <span class="font-mono tracking-wide">ФОП · КВЕД 63.99 · Кривий Ріг</span>
+    <a href="tel:+380954325555" class="hover:text-signal-400 transition">+38 (095) 432-55-55</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-50 border-b border-white/5 bg-abyss-950/90 backdrop-blur-md">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+    <a href="#" class="flex items-center gap-3 group">
+      <div class="w-10 h-10 rounded-lg bg-signal-500/10 border border-signal-500/30 flex items-center justify-center font-mono font-bold text-signal-400 text-lg group-hover:shadow-glow transition">У</div>
+      <div class="leading-tight">
+        <div class="font-semibold tracking-tight">Улінська Лариса</div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-mist-400">Морський консалтинг</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-mist-200">
+      <a href="#services" class="nav-link hover:text-white transition">Послуги</a>
+      <a href="#calculator" class="nav-link hover:text-white transition">Калькулятор</a>
+      <a href="#why" class="nav-link hover:text-white transition">Переваги</a>
+      <a href="#contacts" class="nav-link hover:text-white transition">Контакти</a>
+    </nav>
+    <a href="https://t.me/+380954325555" target="_blank" rel="noopener"
+       class="bg-signal-500 hover:bg-signal-400 text-abyss-950 font-semibold text-sm px-4 py-2 rounded-lg transition shadow-glow">
+      Telegram
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="relative overflow-hidden grid-bg">
+    <div class="absolute inset-0 bg-gradient-to-b from-signal-500/5 via-transparent to-abyss-950 pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 lg:py-28 grid lg:grid-cols-12 gap-12 items-center relative">
+      <div class="lg:col-span-7">
+        <div class="inline-flex items-center gap-2 border border-signal-500/30 bg-signal-500/5 text-signal-400 text-[11px] uppercase tracking-[0.18em] font-medium px-3 py-1.5 rounded-full mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-signal-400 animate-pulse"></span>
+          Інформаційна підтримка моряків
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-[3.25rem] font-extrabold leading-[1.1] tracking-tight mb-6">
+          Чіткий курс до
+          <span class="text-signal-400">контракту</span>
+          без зайвої рутини
+        </h1>
+        <p class="text-lg text-mist-200 leading-relaxed max-w-xl mb-10">
+          Аналізуємо профіль, готуємо документи та розміщуємо анкети в міжнародних базах.
+          Ви зосереджуєтесь на підготовці до рейсу — ми беремо на себе пошукову роботу.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#services" class="inline-flex justify-center items-center bg-signal-500 hover:bg-signal-400 text-abyss-950 font-semibold px-6 py-3.5 rounded-lg transition">
+            Дивитися послуги
+          </a>
+          <a href="#calculator" class="inline-flex justify-center items-center border border-white/15 hover:border-signal-500/50 hover:bg-white/5 px-6 py-3.5 rounded-lg transition">
+            Розрахувати вартість
+          </a>
+        </div>
+        <div class="grid grid-cols-3 gap-6 mt-14 pt-8 border-t border-white/10 max-w-md">
+          <div>
+            <div class="font-mono text-2xl text-signal-400 font-semibold">100%</div>
+            <div class="text-[11px] uppercase tracking-wider text-mist-400 mt-1">Конфіденційно</div>
+          </div>
+          <div>
+            <div class="font-mono text-2xl text-signal-400 font-semibold">24/7</div>
+            <div class="text-[11px] uppercase tracking-wider text-mist-400 mt-1">Зв’язок</div>
+          </div>
+          <div>
+            <div class="font-mono text-2xl text-signal-400 font-semibold">1:1</div>
+            <div class="text-[11px] uppercase tracking-wider text-mist-400 mt-1">Під ваш досвід</div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="relative rounded-2xl border border-white/10 bg-abyss-800/60 p-8 shadow-card backdrop-blur">
+          <div class="absolute -top-3 -right-3 w-20 h-20 bg-signal-500/20 rounded-full blur-2xl"></div>
+          <p class="text-sm uppercase tracking-[0.15em] text-signal-400 mb-4 font-medium">Підхід</p>
+          <p class="text-xl leading-snug text-mist-100 mb-8">
+            Ми знімаємо з вас аналітичну та адміністративну рутину, щоб ви могли готуватися до контракту, а не шукати вакансії вручну.
+          </p>
+          <div class="flex items-center gap-3 pt-6 border-t border-white/10">
+            <div class="w-11 h-11 rounded-full bg-signal-500/15 border border-signal-500/30 flex items-center justify-center font-mono text-signal-400 font-bold">ЛО</div>
+            <div>
+              <div class="font-semibold">Улінська Лариса Олександрівна</div>
+              <div class="text-sm text-mist-400">ФОП · РНОКПП 2275220621</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 border-t border-white/5">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="mb-12 max-w-2xl">
+        <p class="text-[11px] uppercase tracking-[0.2em] text-signal-400 mb-2 font-medium">Каталог послуг</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3">Що ми робимо</h2>
+        <p class="text-mist-200">Кожна послуга — окремий етап шляху від аналізу профілю до підписання контракту.</p>
+      </div>
+
+      <div class="space-y-0 border-y border-white/10">
+        <!-- 01 -->
+        <div class="grid md:grid-cols-[5rem_1fr_auto] gap-4 md:gap-6 py-8 border-b border-white/10 items-start">
+          <span class="font-mono text-2xl text-signal-400/80">01</span>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Аналіз кар’єрного профілю</h3>
+            <p class="text-mist-200 text-sm leading-relaxed">Розбір досвіду, документів і цілей. Визначаємо реалістичні напрямки та наступні кроки для виходу на ринок.</p>
+          </div>
+          <div class="md:text-right">
+            <div class="text-[10px] uppercase tracking-widest text-mist-400 mb-0.5">від</div>
+            <div class="font-mono text-xl text-signal-400">1 200 ₴</div>
+          </div>
+        </div>
+        <!-- 02 -->
+        <div class="grid md:grid-cols-[5rem_1fr_auto] gap-4 md:gap-6 py-8 border-b border-white/10 items-start">
+          <span class="font-mono text-2xl text-signal-400/80">02</span>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Підготовка та розміщення профілю в базах</h3>
+            <p class="text-mist-200 text-sm leading-relaxed">Оцифрування документів, завантаження в профільні міжнародні бази моряків і перевірка коректності відображення.</p>
+          </div>
+          <div class="md:text-right">
+            <div class="text-[10px] uppercase tracking-widest text-mist-400 mb-0.5">від</div>
+            <div class="font-mono text-xl text-signal-400">7 000 ₴</div>
+          </div>
+        </div>
+        <!-- 03 -->
+        <div class="grid md:grid-cols-[5rem_1fr_auto] gap-4 md:gap-6 py-8 border-b border-white/10 items-start">
+          <span class="font-mono text-2xl text-signal-400/80">03</span>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Оформлення Seafarer’s CV та пакету документів</h3>
+            <p class="text-mist-200 text-sm leading-relaxed">Повне заповнення анкети під вимоги судновласників, структурування досвіду, робота з фото та супровідними файлами.</p>
+          </div>
+          <div class="md:text-right">
+            <div class="text-[10px] uppercase tracking-widest text-mist-400 mb-0.5">від</div>
+            <div class="font-mono text-xl text-signal-400">12 000 ₴</div>
+          </div>
+        </div>
+        <!-- 04 -->
+        <div class="grid md:grid-cols-[5rem_1fr_auto] gap-4 md:gap-6 py-8 border-b border-white/10 items-start">
+          <span class="font-mono text-2xl text-signal-400/80">04</span>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Комплексний супровід до контракту</h3>
+            <p class="text-mist-200 text-sm leading-relaxed">Від створення профілю до затвердження на посаду: моніторинг вакансій, підготовка до інтерв’ю та інформаційна підтримка.</p>
+          </div>
+          <div class="md:text-right">
+            <div class="text-[10px] uppercase tracking-widest text-mist-400 mb-0.5">від</div>
+            <div class="font-mono text-xl text-signal-400">20 000 ₴</div>
+          </div>
+        </div>
+        <!-- 05 -->
+        <div class="grid md:grid-cols-[5rem_1fr_auto] gap-4 md:gap-6 py-8 items-start">
+          <span class="font-mono text-2xl text-signal-400/80">05</span>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Персональний кар’єрний коучинг</h3>
+            <p class="text-mist-200 text-sm leading-relaxed">Індивідуальна програма для офіцерів і спеціалістів зі складним запитом. Обсяг і вартість узгоджуються після першої зустрічі.</p>
+          </div>
+          <div class="md:text-right">
+            <div class="text-[10px] uppercase tracking-widest text-mist-400 mb-0.5">&nbsp;</div>
+            <div class="font-mono text-xl text-signal-400">за домовленістю</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 p-6 rounded-2xl border border-signal-500/20 bg-signal-500/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h3 class="font-semibold text-lg mb-1">Нестандартна ситуація?</h3>
+          <p class="text-sm text-mist-200">Напишіть — розберемо ваш кейс і запропонуємо конкретний план дій.</p>
+        </div>
+        <a href="https://t.me/+380954325555" target="_blank" rel="noopener"
+           class="shrink-0 bg-signal-500 hover:bg-signal-400 text-abyss-950 font-semibold px-5 py-3 rounded-lg transition text-sm">
+          Написати в Telegram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="calculator" class="py-20 bg-abyss-900/50 border-y border-white/5">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="rounded-2xl border border-white/10 bg-abyss-800/40 p-6 sm:p-10 shadow-card">
+        <p class="text-[11px] uppercase tracking-[0.2em] text-signal-400 mb-2 font-medium">Онлайн-калькулятор</p>
+        <h2 class="text-3xl font-bold tracking-tight mb-2">Оцініть бюджет підтримки</h2>
+        <p class="text-mist-200 text-sm mb-8">Оберіть одну або кілька послуг — сума оновиться миттєво.</p>
+
+        <div class="grid lg:grid-cols-5 gap-8">
+          <div class="lg:col-span-3 space-y-3">
+            <label class="check-card flex items-start gap-4 p-4 rounded-xl border border-white/10 cursor-pointer hover:border-signal-500/30 transition bg-abyss-900/40">
+              <input id="srv1" type="checkbox" value="1200" data-name="Аналіз кар’єрного профілю" class="sr-only" onchange="calculateTotal()">
+              <span class="box mt-0.5 w-6 h-6 rounded-md border border-white/20 bg-abyss-800 flex items-center justify-center text-[11px] font-bold shrink-0">✓</span>
+              <span class="flex-1 label-text">
+                <span class="block font-medium">Аналіз кар’єрного профілю</span>
+                <span class="block text-xs text-mist-400 mt-0.5">Розбір досвіду та документів</span>
+              </span>
+              <span class="font-mono text-signal-400 whitespace-nowrap text-sm">від 1 200 ₴</span>
+            </label>
+            <label class="check-card flex items-start gap-4 p-4 rounded-xl border border-white/10 cursor-pointer hover:border-signal-500/30 transition bg-abyss-900/40">
+              <input id="srv2" type="checkbox" value="7000" data-name="Підготовка та розміщення профілю" class="sr-only" onchange="calculateTotal()">
+              <span class="box mt-0.5 w-6 h-6 rounded-md border border-white/20 bg-abyss-800 flex items-center justify-center text-[11px] font-bold shrink-0">✓</span>
+              <span class="flex-1 label-text">
+                <span class="block font-medium">Підготовка та розміщення профілю</span>
+                <span class="block text-xs text-mist-400 mt-0.5">Оцифрування + завантаження в бази</span>
+              </span>
+              <span class="font-mono text-signal-400 whitespace-nowrap text-sm">від 7 000 ₴</span>
+            </label>
+            <label class="check-card flex items-start gap-4 p-4 rounded-xl border border-white/10 cursor-pointer hover:border-signal-500/30 transition bg-abyss-900/40">
+              <input id="srv3" type="checkbox" value="12000" data-name="Оформлення Seafarer’s CV" class="sr-only" onchange="calculateTotal()">
+              <span class="box mt-0.5 w-6 h-6 rounded-md border border-white/20 bg-abyss-800 flex items-center justify-center text-[11px] font-bold shrink-0">✓</span>
+              <span class="flex-1 label-text">
+                <span class="block font-medium">Оформлення Seafarer’s CV</span>
+                <span class="block text-xs text-mist-400 mt-0.5">Анкета + пакет документів</span>
+              </span>
+              <span class="font-mono text-signal-400 whitespace-nowrap text-sm">від 12 000 ₴</span>
+            </label>
+            <label class="check-card flex items-start gap-4 p-4 rounded-xl border border-white/10 cursor-pointer hover:border-signal-500/30 transition bg-abyss-900/40">
+              <input id="srv4" type="checkbox" value="20000" data-name="Комплексний супровід до контракту" class="sr-only" onchange="calculateTotal()">
+              <span class="box mt-0.5 w-6 h-6 rounded-md border border-white/20 bg-abyss-800 flex items-center justify-center text-[11px] font-bold shrink-0">✓</span>
+              <span class="flex-1 label-text">
+                <span class="block font-medium">Комплексний супровід до контракту</span>
+                <span class="block text-xs text-mist-400 mt-0.5">До затвердження на посаду</span>
+              </span>
+              <span class="font-mono text-signal-400 whitespace-nowrap text-sm">від 20 000 ₴</span>
+            </label>
+            <label class="check-card flex items-start gap-4 p-4 rounded-xl border border-white/10 cursor-pointer hover:border-signal-500/30 transition bg-abyss-900/40">
+              <input id="srv5" type="checkbox" value="0" data-name="Персональний кар’єрний коучинг" class="sr-only" onchange="calculateTotal()">
+              <span class="box mt-0.5 w-6 h-6 rounded-md border border-white/20 bg-abyss-800 flex items-center justify-center text-[11px] font-bold shrink-0">✓</span>
+              <span class="flex-1 label-text">
+                <span class="block font-medium">Персональний кар’єрний коучинг</span>
+                <span class="block text-xs text-mist-400 mt-0.5">Індивідуальна програма</span>
+              </span>
+              <span class="font-mono text-signal-400 whitespace-nowrap text-sm">за домовленістю</span>
+            </label>
+          </div>
+
+          <aside class="lg:col-span-2 rounded-xl bg-abyss-950 border border-white/10 p-6 flex flex-col">
+            <h3 class="font-semibold text-lg mb-4">Ваш розрахунок</h3>
+            <ul id="selected-list" class="space-y-2 flex-1 text-sm text-mist-200">
+              <li class="text-mist-400 italic">Послуги не обрано</li>
+            </ul>
+            <div class="border-t border-white/10 pt-5 mt-5">
+              <div class="flex items-baseline justify-between mb-5">
+                <span class="text-sm text-mist-400">Всього:</span>
+                <span id="total-price" class="font-mono text-3xl text-signal-400 font-semibold">0 ₴</span>
+              </div>
+              <a id="order-btn" href="#contacts"
+                 class="w-full inline-flex items-center justify-center bg-signal-500 text-abyss-950 font-semibold py-3.5 rounded-lg pointer-events-none opacity-40 transition">
+                Замовити в Telegram
+              </a>
+              <p class="text-[11px] text-mist-400 mt-3 leading-relaxed">
+                Відкриється Telegram за номером +38 (095) 432-55-55. Текст заявки скопіюється автоматично.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section id="why" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="text-[11px] uppercase tracking-[0.2em] text-signal-400 mb-2 font-medium">Чому ми</p>
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3">Точність. Швидкість. Конфіденційність.</h2>
+      <p class="text-mist-200 max-w-2xl mb-12">Працюємо з перевіреними каналами та персональними кейсами — без шаблонних рішень.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="p-7 rounded-2xl border border-white/10 bg-abyss-900/40 hover:border-signal-500/25 transition">
+          <div class="w-10 h-10 rounded-lg bg-signal-500/10 border border-signal-500/25 flex items-center justify-center mb-5 font-mono text-signal-400">01</div>
+          <h3 class="font-semibold text-lg mb-3">Економія часу</h3>
+          <p class="text-sm text-mist-200 leading-relaxed">Поки ви відпочиваєте після рейсу, ми займаємося аналізом, підготовкою та розміщенням вашого профілю.</p>
+        </article>
+        <article class="p-7 rounded-2xl border border-white/10 bg-abyss-900/40 hover:border-signal-500/25 transition">
+          <div class="w-10 h-10 rounded-lg bg-signal-500/10 border border-signal-500/25 flex items-center justify-center mb-5 font-mono text-signal-400">02</div>
+          <h3 class="font-semibold text-lg mb-3">Актуальні канали</h3>
+          <p class="text-sm text-mist-200 leading-relaxed">Працюємо з профільними базами вакансій і перевіряємо актуальність потоків перед розміщенням.</p>
+        </article>
+        <article class="p-7 rounded-2xl border border-white/10 bg-abyss-900/40 hover:border-signal-500/25 transition">
+          <div class="w-10 h-10 rounded-lg bg-signal-500/10 border border-signal-500/25 flex items-center justify-center mb-5 font-mono text-signal-400">03</div>
+          <h3 class="font-semibold text-lg mb-3">Під ваш досвід</h3>
+          <p class="text-sm text-mist-200 leading-relaxed">Жодних універсальних шаблонів. Кожен запит розбираємо окремо й підбираємо ресурси під ваші цілі.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="contacts" class="py-20 border-t border-white/5 bg-abyss-900/30">
+    <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
+      <div>
+        <p class="text-[11px] uppercase tracking-[0.2em] text-signal-400 mb-2 font-medium">Зв’язок</p>
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Почніть з короткого повідомлення</h2>
+        <p class="text-mist-200 mb-8 leading-relaxed">Напишіть або зателефонуйте — відповімо найближчим часом і узгодимо наступні кроки.</p>
+        <ul class="space-y-5">
+          <li>
+            <div class="text-[11px] uppercase tracking-widest text-mist-400 mb-1">Телефон</div>
+            <a href="tel:+380954325555" class="text-lg font-medium hover:text-signal-400 transition">+38 (095) 432-55-55</a>
+          </li>
+          <li>
+            <div class="text-[11px] uppercase tracking-widest text-mist-400 mb-1">Email</div>
+            <a href="mailto:larisasamsung2017@gmail.com" class="text-lg font-medium hover:text-signal-400 transition break-all">larisasamsung2017@gmail.com</a>
+          </li>
+          <li>
+            <div class="text-[11px] uppercase tracking-widest text-mist-400 mb-1">Telegram</div>
+            <a href="https://t.me/+380954325555" target="_blank" rel="noopener" class="text-lg font-medium hover:text-signal-400 transition">+38 (095) 432-55-55</a>
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-abyss-800/50 p-8">
+        <h3 class="font-semibold text-xl mb-6">Реквізити ФОП</h3>
+        <dl class="space-y-4 text-sm">
+          <div class="flex justify-between gap-4 border-b border-white/10 pb-3">
+            <dt class="text-mist-400">ПІБ</dt>
+            <dd class="text-right font-medium">Улінська Лариса Олександрівна</dd>
+          </div>
+          <div class="flex justify-between gap-4 border-b border-white/10 pb-3">
+            <dt class="text-mist-400">РНОКПП</dt>
+            <dd class="text-right font-mono">2275220621</dd>
+          </div>
+          <div class="flex justify-between gap-4 border-b border-white/10 pb-3">
+            <dt class="text-mist-400">Основний КВЕД</dt>
+            <dd class="text-right">63.99</dd>
+          </div>
+          <div class="flex justify-between gap-4 border-b border-white/10 pb-3">
+            <dt class="text-mist-400">Дата реєстрації</dt>
+            <dd class="text-right">29.05.2026</dd>
+          </div>
+          <div class="pt-1">
+            <dt class="text-mist-400 mb-1">Адреса</dt>
+            <dd class="text-sm leading-relaxed">Україна, 50086, Дніпропетровська обл., м. Кривий Ріг, вул. Телевізійна, буд. 1, кв. 52</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-white/5 py-8">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between gap-4 text-sm text-mist-400">
+    <div>© 2026 ФОП Улінська Лариса Олександрівна</div>
+    <div class="font-mono text-xs">РНОКПП 2275220621 · КВЕД 63.99</div>
+  </div>
+</footer>
+
+<script>
+function calculateTotal() {
+  const checks = document.querySelectorAll('#calculator input[type=checkbox]');
+  const list = document.getElementById('selected-list');
+  const totalEl = document.getElementById('total-price');
+  const btn = document.getElementById('order-btn');
+  let total = 0;
+  const selected = [];
+
+  checks.forEach(c => {
+    if (c.checked) {
+      const val = parseInt(c.value, 10);
+      total += val;
+      selected.push({ name: c.dataset.name, price: val });
+    }
+  });
+
+  if (selected.length === 0) {
+    list.innerHTML = '<li class="text-mist-400 italic">Послуги не обрано</li>';
+    totalEl.textContent = '0 ₴';
+    btn.classList.add('pointer-events-none', 'opacity-40');
+    btn.classList.remove('hover:bg-signal-400');
+    btn.removeAttribute('href');
+    return;
+  }
+
+  list.innerHTML = selected.map(s =>
+    `<li class="flex justify-between gap-2"><span>${s.name}</span><span class="font-mono text-signal-400 shrink-0">${s.price ? s.price.toLocaleString('uk-UA') + ' ₴' : 'договір'}</span></li>`
+  ).join('');
+
+  totalEl.textContent = total.toLocaleString('uk-UA') + ' ₴';
+  btn.classList.remove('pointer-events-none', 'opacity-40');
+  btn.classList.add('hover:bg-signal-400');
+
+  const lines = selected.map(s => `• ${s.name}${s.price ? ' — від ' + s.price.toLocaleString('uk-UA') + ' ₴' : ' — за домовленістю'}`);
+  const text = encodeURIComponent('Доброго дня! Хочу замовити:\n' + lines.join('\n') + (total ? '\n\nОрієнтовна сума: від ' + total.toLocaleString('uk-UA') + ' ₴' : ''));
+  btn.href = 'https://t.me/+380954325555?text=' + text;
+}
+</script>
+</body>
+</html>
